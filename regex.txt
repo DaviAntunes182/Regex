@@ -1,0 +1,11 @@
+Alvo:
+    Onde
+
+Pattern:
+    Expressão Regular
+
+Regex Engine:
+    O que processará a Expressão Regular
+
+Match:
+    Resultado
