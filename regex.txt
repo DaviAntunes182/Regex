@@ -9,3 +9,38 @@ Regex Engine:
 
 Match:
     Resultado
+
+Grep:
+    Ele permite o uso de expressões regulares para buscar padrões específicos e imprime o resultado das ocorrências no termina
+    grep opções ‘padrão_regex’ caminho_do_arquivo.txt
+
+    grep -i ou --ignore-case: Ignora a diferenciação entre maiúsculas e minúsculas, tornando a pesquisa insensível a letras maiúsculas ou minúsculas.
+    
+    grep -v ou --invert-match: Inverte a correspondência, exibindo linhas que não contêm o padrão especificado.
+    
+    grep -r ou -R ou --recursive: Realiza uma pesquisa recursiva em diretórios e seus subdiretórios. Útil para encontrar padrões em árvores inteiras de diretórios.
+    
+    grep -l ou --files-with-matches: Exibe apenas os nomes dos arquivos que contêm correspondências, em vez das próprias linhas correspondentes.
+    
+    grep -c ou --count: Exibe apenas o número de correspondências em cada arquivo, em vez das próprias linhas correspondentes.
+    
+    grep -n ou --line-number: Exibe o número da linha junto com as linhas correspondentes.
+    
+    grep -E ou --extended-regexp: Interpreta o padrão de pesquisa como uma expressão regular estendida (Regex) em vez de uma correspondência literal.
+    
+    grep -f <arquivo> ou --file=<arquivo>: Lê os padrões de pesquisa de um arquivo em vez de especificá-los diretamente na linha de comando.
+    
+    grep -h ou --no-filename: Suprime a exibição dos nomes dos arquivos ao imprimir as linhas correspondentes.
+    
+    grep -P : habilita o modo de interpretação de padrões como expressões regulares Perl (Perl-Compatible Regular Expressions ou PCRE). Isso significa que você pode usar padrões de expressões regulares mais avançados e complexos com a flag -P. As expressões regulares Perl são mais poderosas e flexíveis do que as expressões regulares básicas usadas pelo grep por padrão. No entanto, nem todas as versões do grep suportam a opção -P, pois ela depende da biblioteca PCRE (Perl-Compatible Regular Expressions). Portanto, verifique a disponibilidade dessa opção na versão específica do grep em seu sistema.
+    man grep: é uma opção que apresenta toda a documentação do grep no terminal.
+
+sed:
+    o sed é um comando usado para manipular os arquivos em texto, e podem substituir sequências de caracteres com base em padrões de expressões regulares
+
+    sed 's/padrão_regex/novo_texto/g' caminho_do_arquivo.txt
+
+awk: 
+    O comando awk, por sua vez, ativa uma linguagem de programação de linha de comando e pode ser usada para processamento de texto. É possível aplicar padrões de expressões regulares para buscas ou manipulações.Confira o exemplo abaixo:
+
+awk '/padrão_regex/ {print $1}' caminho_do_arquivo.txt
